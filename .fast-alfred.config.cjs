@@ -1,7 +1,7 @@
 const { author, description, homepage } = require('./package.json')
 
 const README = `
-TODO - fill README
+Translate, spell-check, and transform text in Alfred, using AI and other tools.
 
 See the workflow codebase in here:
 ${homepage}
@@ -13,8 +13,7 @@ ${homepage}
 module.exports = {
     bundlerOptions: {},
     workflowMetadata: {
-        name: 'WORKFLOW_NAME',
-        // category: 'Internet',
+        name: 'Alfred Text Transformer',
         createdby: author.name,
         webaddress: homepage,
         description,

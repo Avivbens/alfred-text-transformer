@@ -1,6 +1,6 @@
-# Contributing to `WORKFLOW_NAME`
+# Contributing to `alfred-text-transformer`
 
-Thank you for your interest in contributing to `WORKFLOW_NAME` :tada: !
+Thank you for your interest in contributing to `alfred-text-transformer` :tada: !
 
 We welcome contributions from everyone.
 
@@ -16,7 +16,7 @@ To get started, follow these steps:
 
 ```bash
 npx fast-alfred -t $(cat package.json | jq -r '.version')
-(cd esbuild && open WORKFLOW_NAME.alfredworkflow)
+(cd esbuild && open alfred-text-transformer.alfredworkflow)
 ```
 
 6. Review your changes with your Alfred app

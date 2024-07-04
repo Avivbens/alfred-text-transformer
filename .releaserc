@@ -1,6 +1,6 @@
 {
     "$schema": "https://json.schemastore.org/semantic-release.json",
-    "repositoryUrl": "https://github.com/Avivbens/REPO-NAME.git",
+    "repositoryUrl": "https://github.com/Avivbens/alfred-text-transformer.git",
     "branches": [
         "+([0-9])?(.{+([0-9]),x}).x",
         "master",
@@ -48,9 +48,9 @@
             {
                 "assets": [
                     {
-                        "path": "./esbuild/WORKFLOW_NAME.alfredworkflow",
-                        "label": "WORKFLOW_NAME.alfredworkflow",
-                        "name": "WORKFLOW_NAME.alfredworkflow"
+                        "path": "./esbuild/alfred-text-transformer.alfredworkflow",
+                        "label": "alfred-text-transformer.alfredworkflow",
+                        "name": "alfred-text-transformer.alfredworkflow"
                     }
                 ]
             }

@@ -1,19 +1,17 @@
 {
-    "name": "REPO-NAME",
+    "name": "alfred-text-transformer",
     "version": "0.0.1",
-    "description": "TODO",
+    "description": "Transform text using Alfred - translate, spell-check, and more!",
     "keywords": [
         "alfred",
         "workflow",
-        "bookmark",
-        "chrome",
-        "search",
-        "multi-profile"
+        "spell-check",
+        "translate"
     ],
-    "homepage": "https://github.com/Avivbens/REPO-NAME",
+    "homepage": "https://github.com/Avivbens/alfred-text-transformer",
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/Avivbens/REPO-NAME.git"
+        "url": "git+https://github.com/Avivbens/alfred-text-transformer.git"
     },
     "license": "MIT",
     "author": {
