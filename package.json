@@ -1,6 +1,6 @@
 {
     "name": "alfred-text-transformer",
-    "version": "0.0.1",
+    "version": "1.0.0",
     "description": "Transform text using Alfred - translate, spell-check, and more!",
     "keywords": [
         "alfred",
