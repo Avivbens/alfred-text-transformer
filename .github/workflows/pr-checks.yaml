@@ -3,7 +3,7 @@ name: PR Health Checks 🐛
 on:
     pull_request:
         branches:
-            - master_1
+            - master
 
 permissions:
     contents: read

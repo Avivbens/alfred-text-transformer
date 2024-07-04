@@ -3,7 +3,7 @@ name: Semantic Release Report 📝
 on:
     pull_request:
         branches:
-            - master_1
+            - master
 
 permissions:
     contents: write

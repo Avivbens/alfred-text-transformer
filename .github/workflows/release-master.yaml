@@ -4,7 +4,7 @@ name: '📦 Create New Release'
 on:
     push:
         branches:
-            - master_1
+            - master
 
 permissions:
     contents: write
