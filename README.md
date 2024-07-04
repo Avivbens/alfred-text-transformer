@@ -16,6 +16,13 @@
 
 Translate, spell-check, and transform text in Alfred, using AI and other tools.
 
+## Features 🥷
+
+-   Grammar: Correct grammar mistakes
+-   Beautify: Enhance the text for better readability and engagement
+-   Spell Check: Identify spelling errors without grammar checking
+-   Translate: Translate text into any language
+
 ### Install via GitHub Releases :sparkles:
 
 ```bash
@@ -28,4 +35,10 @@ open ~/Desktop/alfred-text-transformer.alfredworkflow
 
 ## Usage
 
-<!-- TODO -->
+Use your customized Alfred keyword to activate each command.
+
+### Translate 🈯
+
+Enter the language code (e.g., "en" for English) followed by the text to be translated, like "en Hello, how are you?"
+
+If the language code is missing, the default language will be English.

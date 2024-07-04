@@ -1,9 +1,28 @@
 const { author, description, homepage } = require('./package.json')
 
 const README = `
-Translate, spell-check, and transform text in Alfred, using AI and other tools.
+#### Thank you for using Text Transformer! ✨
 
-See the workflow codebase in here:
+This workflow has been created using Fast Alfred, a user-friendly workflow builder that simplifies the process of creating Alfred workflows.
+
+## Features
+
+- Grammar: Correct grammar mistakes
+- Beautify: Enhance the text for better readability and engagement
+- Spell Check: Identify spelling errors without grammar checking
+- Translate: Translate text into any language
+
+## Usage
+
+Use your customized Alfred keyword to activate each command.
+
+### Translate
+
+Enter the language code (e.g., "en" for English) followed by the text to be translated, like "en Hello, how are you?"
+
+If the language code is missing, the default language will be English.
+
+To view the workflow codebase, click here:
 ${homepage}
 `.trim()
 
@@ -13,7 +32,7 @@ ${homepage}
 module.exports = {
     bundlerOptions: {},
     workflowMetadata: {
-        name: 'Alfred Text Transformer',
+        name: 'Text Transformer',
         createdby: author.name,
         webaddress: homepage,
         description,
