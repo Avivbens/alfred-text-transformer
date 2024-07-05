@@ -37,6 +37,8 @@ open ~/Desktop/alfred-text-transformer.alfredworkflow
 
 Use your customized Alfred keyword to activate each command.
 
+You can hold down the `cmd` key to preview the output before copying it.
+
 ### Translate 🈯
 
 Enter the language code (e.g., "en" for English) followed by the text to be translated, like "en Hello, how are you?"
