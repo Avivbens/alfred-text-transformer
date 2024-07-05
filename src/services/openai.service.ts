@@ -13,7 +13,7 @@ export async function callOpenAI(token: string, systemPrompt: string, userPrompt
             },
             { role: 'user', content: userPrompt.trim() },
         ],
-        model: 'gpt-3.5-turbo',
+        model: 'gpt-4o',
     })
 
     const res: string[] = chatCompletion.choices.map((choice) => choice?.message?.content).filter(Boolean) as string[]
