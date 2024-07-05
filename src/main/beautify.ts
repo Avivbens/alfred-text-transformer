@@ -26,15 +26,13 @@ import { callOpenAI } from '@services/openai.service'
 
         const res = await callOpenAI(token, BEAUTIFY_SYSTEM_PROMPT, alfredClient.input)
 
-        alfredClient.output({
-            items: [
-                {
-                    title: res,
-                    subtitle: 'Spell Check',
-                    arg: res,
-                },
-            ],
-        })
+        const items = res.map((option) => ({
+            title: option,
+            subtitle: 'Beautify',
+            arg: option,
+        }))
+
+        alfredClient.output({ items })
     } catch (error) {
         alfredClient.error(error)
     }

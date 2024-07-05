@@ -25,16 +25,13 @@ import { callOpenAI } from '@services/openai.service'
         }
 
         const res = await callOpenAI(token, GRAMMAR_SYSTEM_PROMPT, alfredClient.input)
+        const items = res.map((option) => ({
+            title: option,
+            subtitle: 'Grammarly',
+            arg: option,
+        }))
 
-        alfredClient.output({
-            items: [
-                {
-                    title: res,
-                    subtitle: 'Grammarly',
-                    arg: res,
-                },
-            ],
-        })
+        alfredClient.output({ items })
     } catch (error) {
         alfredClient.error(error)
     }

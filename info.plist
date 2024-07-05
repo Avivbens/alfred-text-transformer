@@ -12,6 +12,16 @@
       <array>
         <dict>
           <key>destinationuid</key>
+          <string>BDA5261A-EF85-4EB4-9DAA-F57EB307B76F</string>
+          <key>modifiers</key>
+          <integer>1048576</integer>
+          <key>modifiersubtext</key>
+          <string>Preview</string>
+          <key>vitoclose</key>
+          <true></true>
+        </dict>
+        <dict>
+          <key>destinationuid</key>
           <string>47B45BC6-EA28-4EFD-8A39-E2FC7283C0E7</string>
           <key>modifiers</key>
           <integer>0</integer>
@@ -23,6 +33,16 @@
       </array>
       <key>9A15D0E2-7D63-41A4-BC56-51F20740BA9B</key>
       <array>
+        <dict>
+          <key>destinationuid</key>
+          <string>BDA5261A-EF85-4EB4-9DAA-F57EB307B76F</string>
+          <key>modifiers</key>
+          <integer>1048576</integer>
+          <key>modifiersubtext</key>
+          <string>Preview</string>
+          <key>vitoclose</key>
+          <true></true>
+        </dict>
         <dict>
           <key>destinationuid</key>
           <string>47B45BC6-EA28-4EFD-8A39-E2FC7283C0E7</string>
@@ -38,6 +58,16 @@
       <array>
         <dict>
           <key>destinationuid</key>
+          <string>BDA5261A-EF85-4EB4-9DAA-F57EB307B76F</string>
+          <key>modifiers</key>
+          <integer>1048576</integer>
+          <key>modifiersubtext</key>
+          <string>Preview</string>
+          <key>vitoclose</key>
+          <true></true>
+        </dict>
+        <dict>
+          <key>destinationuid</key>
           <string>47B45BC6-EA28-4EFD-8A39-E2FC7283C0E7</string>
           <key>modifiers</key>
           <integer>0</integer>
@@ -49,6 +79,16 @@
       </array>
       <key>E99E241E-04E1-4AAC-A6C9-078930728071</key>
       <array>
+        <dict>
+          <key>destinationuid</key>
+          <string>BDA5261A-EF85-4EB4-9DAA-F57EB307B76F</string>
+          <key>modifiers</key>
+          <integer>1048576</integer>
+          <key>modifiersubtext</key>
+          <string>Preview</string>
+          <key>vitoclose</key>
+          <true></true>
+        </dict>
         <dict>
           <key>destinationuid</key>
           <string>47B45BC6-EA28-4EFD-8A39-E2FC7283C0E7</string>
@@ -71,6 +111,35 @@
     <string>Text Transformer</string>
     <key>objects</key>
     <array>
+      <dict>
+        <key>config</key>
+        <dict>
+          <key>alignment</key>
+          <integer>0</integer>
+          <key>backgroundcolor</key>
+          <string></string>
+          <key>fadespeed</key>
+          <integer>0</integer>
+          <key>fillmode</key>
+          <integer>0</integer>
+          <key>font</key>
+          <string></string>
+          <key>ignoredynamicplaceholders</key>
+          <false></false>
+          <key>largetypetext</key>
+          <string>{query}</string>
+          <key>textcolor</key>
+          <string></string>
+          <key>wrapat</key>
+          <integer>50</integer>
+        </dict>
+        <key>type</key>
+        <string>alfred.workflow.output.largetype</string>
+        <key>uid</key>
+        <string>BDA5261A-EF85-4EB4-9DAA-F57EB307B76F</string>
+        <key>version</key>
+        <integer>3</integer>
+      </dict>
       <dict>
         <key>config</key>
         <dict>
@@ -174,25 +243,6 @@
       <dict>
         <key>config</key>
         <dict>
-          <key>autopaste</key>
-          <false></false>
-          <key>clipboardtext</key>
-          <string>{query}</string>
-          <key>ignoredynamicplaceholders</key>
-          <false></false>
-          <key>transient</key>
-          <false></false>
-        </dict>
-        <key>type</key>
-        <string>alfred.workflow.output.clipboard</string>
-        <key>uid</key>
-        <string>47B45BC6-EA28-4EFD-8A39-E2FC7283C0E7</string>
-        <key>version</key>
-        <integer>3</integer>
-      </dict>
-      <dict>
-        <key>config</key>
-        <dict>
           <key>alfredfiltersresults</key>
           <false></false>
           <key>alfredfiltersresultsmatchmode</key>
@@ -290,6 +340,25 @@
         <key>version</key>
         <integer>3</integer>
       </dict>
+      <dict>
+        <key>config</key>
+        <dict>
+          <key>autopaste</key>
+          <false></false>
+          <key>clipboardtext</key>
+          <string>{query}</string>
+          <key>ignoredynamicplaceholders</key>
+          <false></false>
+          <key>transient</key>
+          <false></false>
+        </dict>
+        <key>type</key>
+        <string>alfred.workflow.output.clipboard</string>
+        <key>uid</key>
+        <string>47B45BC6-EA28-4EFD-8A39-E2FC7283C0E7</string>
+        <key>version</key>
+        <integer>3</integer>
+      </dict>
     </array>
     <key>readme</key>
     <string>#### Thank you for using Text Transformer! ✨
@@ -320,9 +389,9 @@ https://github.com/Avivbens/alfred-text-transformer</string>
       <key>47B45BC6-EA28-4EFD-8A39-E2FC7283C0E7</key>
       <dict>
         <key>xpos</key>
-        <integer>520</integer>
+        <integer>730</integer>
         <key>ypos</key>
-        <integer>285</integer>
+        <integer>515</integer>
       </dict>
       <key>6F2D236E-D961-42DC-ACF2-7C025CA92966</key>
       <dict>
@@ -344,6 +413,13 @@ https://github.com/Avivbens/alfred-text-transformer</string>
         <integer>70</integer>
         <key>ypos</key>
         <integer>365</integer>
+      </dict>
+      <key>BDA5261A-EF85-4EB4-9DAA-F57EB307B76F</key>
+      <dict>
+        <key>xpos</key>
+        <integer>720</integer>
+        <key>ypos</key>
+        <integer>60</integer>
       </dict>
       <key>E99E241E-04E1-4AAC-A6C9-078930728071</key>
       <dict>
