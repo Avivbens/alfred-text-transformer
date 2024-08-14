@@ -31,6 +31,29 @@
           <false></false>
         </dict>
       </array>
+      <key>8F3894EF-9FDA-4943-9C83-1229F6B9B94C</key>
+      <array>
+        <dict>
+          <key>destinationuid</key>
+          <string>BDA5261A-EF85-4EB4-9DAA-F57EB307B76F</string>
+          <key>modifiers</key>
+          <integer>1048576</integer>
+          <key>modifiersubtext</key>
+          <string>Preview</string>
+          <key>vitoclose</key>
+          <true></true>
+        </dict>
+        <dict>
+          <key>destinationuid</key>
+          <string>47B45BC6-EA28-4EFD-8A39-E2FC7283C0E7</string>
+          <key>modifiers</key>
+          <integer>0</integer>
+          <key>modifiersubtext</key>
+          <string></string>
+          <key>vitoclose</key>
+          <false></false>
+        </dict>
+      </array>
       <key>9A15D0E2-7D63-41A4-BC56-51F20740BA9B</key>
       <array>
         <dict>
@@ -256,6 +279,56 @@
           <key>escaping</key>
           <integer>102</integer>
           <key>keyword</key>
+          <string>{var:action_items_keyword}</string>
+          <key>queuedelaycustom</key>
+          <integer>3</integer>
+          <key>queuedelayimmediatelyinitially</key>
+          <true></true>
+          <key>queuedelaymode</key>
+          <integer>0</integer>
+          <key>queuemode</key>
+          <integer>2</integer>
+          <key>runningsubtext</key>
+          <string>Extracting...</string>
+          <key>script</key>
+          <string>./esbuild/assets/run-node.sh esbuild/action-items "$1"
+</string>
+          <key>scriptargtype</key>
+          <integer>1</integer>
+          <key>scriptfile</key>
+          <string></string>
+          <key>subtext</key>
+          <string>Extract action items from the provided text</string>
+          <key>title</key>
+          <string>Action Items</string>
+          <key>type</key>
+          <integer>11</integer>
+          <key>withspace</key>
+          <true></true>
+        </dict>
+        <key>type</key>
+        <string>alfred.workflow.input.scriptfilter</string>
+        <key>uid</key>
+        <string>8F3894EF-9FDA-4943-9C83-1229F6B9B94C</string>
+        <key>version</key>
+        <integer>3</integer>
+      </dict>
+      <dict>
+        <key>config</key>
+        <dict>
+          <key>alfredfiltersresults</key>
+          <false></false>
+          <key>alfredfiltersresultsmatchmode</key>
+          <integer>0</integer>
+          <key>argumenttreatemptyqueryasnil</key>
+          <true></true>
+          <key>argumenttrimmode</key>
+          <integer>0</integer>
+          <key>argumenttype</key>
+          <integer>0</integer>
+          <key>escaping</key>
+          <integer>102</integer>
+          <key>keyword</key>
           <string>{var:beautify_keyword}</string>
           <key>queuedelaycustom</key>
           <integer>3</integer>
@@ -287,6 +360,25 @@
         <string>alfred.workflow.input.scriptfilter</string>
         <key>uid</key>
         <string>B9150C05-6465-4A8C-91F7-D6929176F398</string>
+        <key>version</key>
+        <integer>3</integer>
+      </dict>
+      <dict>
+        <key>config</key>
+        <dict>
+          <key>autopaste</key>
+          <false></false>
+          <key>clipboardtext</key>
+          <string>{query}</string>
+          <key>ignoredynamicplaceholders</key>
+          <false></false>
+          <key>transient</key>
+          <false></false>
+        </dict>
+        <key>type</key>
+        <string>alfred.workflow.output.clipboard</string>
+        <key>uid</key>
+        <string>47B45BC6-EA28-4EFD-8A39-E2FC7283C0E7</string>
         <key>version</key>
         <integer>3</integer>
       </dict>
@@ -340,25 +432,6 @@
         <key>version</key>
         <integer>3</integer>
       </dict>
-      <dict>
-        <key>config</key>
-        <dict>
-          <key>autopaste</key>
-          <false></false>
-          <key>clipboardtext</key>
-          <string>{query}</string>
-          <key>ignoredynamicplaceholders</key>
-          <false></false>
-          <key>transient</key>
-          <false></false>
-        </dict>
-        <key>type</key>
-        <string>alfred.workflow.output.clipboard</string>
-        <key>uid</key>
-        <string>47B45BC6-EA28-4EFD-8A39-E2FC7283C0E7</string>
-        <key>version</key>
-        <integer>3</integer>
-      </dict>
     </array>
     <key>readme</key>
     <string>#### Thank you for using Text Transformer! ✨
@@ -389,9 +462,9 @@ https://github.com/Avivbens/alfred-text-transformer</string>
       <key>47B45BC6-EA28-4EFD-8A39-E2FC7283C0E7</key>
       <dict>
         <key>xpos</key>
-        <integer>730</integer>
+        <integer>725</integer>
         <key>ypos</key>
-        <integer>515</integer>
+        <integer>725</integer>
       </dict>
       <key>6F2D236E-D961-42DC-ACF2-7C025CA92966</key>
       <dict>
@@ -399,6 +472,13 @@ https://github.com/Avivbens/alfred-text-transformer</string>
         <integer>70</integer>
         <key>ypos</key>
         <integer>215</integer>
+      </dict>
+      <key>8F3894EF-9FDA-4943-9C83-1229F6B9B94C</key>
+      <dict>
+        <key>xpos</key>
+        <integer>60</integer>
+        <key>ypos</key>
+        <integer>420</integer>
       </dict>
       <key>9A15D0E2-7D63-41A4-BC56-51F20740BA9B</key>
       <dict>
@@ -410,9 +490,9 @@ https://github.com/Avivbens/alfred-text-transformer</string>
       <key>B9150C05-6465-4A8C-91F7-D6929176F398</key>
       <dict>
         <key>xpos</key>
-        <integer>70</integer>
+        <integer>65</integer>
         <key>ypos</key>
-        <integer>365</integer>
+        <integer>575</integer>
       </dict>
       <key>BDA5261A-EF85-4EB4-9DAA-F57EB307B76F</key>
       <dict>
@@ -424,9 +504,9 @@ https://github.com/Avivbens/alfred-text-transformer</string>
       <key>E99E241E-04E1-4AAC-A6C9-078930728071</key>
       <dict>
         <key>xpos</key>
-        <integer>70</integer>
+        <integer>65</integer>
         <key>ypos</key>
-        <integer>515</integer>
+        <integer>725</integer>
       </dict>
     </dict>
     <key>userconfigurationconfig</key>
@@ -560,6 +640,27 @@ https://github.com/Avivbens/alfred-text-transformer</string>
         <string>textfield</string>
         <key>variable</key>
         <string>beautify_keyword</string>
+      </dict>
+      <dict>
+        <key>config</key>
+        <dict>
+          <key>default</key>
+          <string>aci</string>
+          <key>placeholder</key>
+          <string></string>
+          <key>required</key>
+          <true></true>
+          <key>trim</key>
+          <true></true>
+        </dict>
+        <key>description</key>
+        <string>Extract relevant pinpoint items from a large text</string>
+        <key>label</key>
+        <string>Action Items Keyword</string>
+        <key>type</key>
+        <string>textfield</string>
+        <key>variable</key>
+        <string>action_items_keyword</string>
       </dict>
     </array>
     <key>version</key>
