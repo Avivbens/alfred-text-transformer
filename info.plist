@@ -526,7 +526,7 @@
           <key>fixedorder</key>
           <false></false>
           <key>items</key>
-          <string>[{"imagefile":"ce3625ffb747959536b381c35b4f405458eb0611.png","title":"Chill","arg":"casual","subtitle":"Casual conversation"},{"imagefile":"efbf1f171ca10c900cc2e5d856cd4d2b97bb9547.png","title":"Professional","arg":"professional","subtitle":"Professional conversation"},{"imagefile":"5e00feb1ae64e85e228be7a9566dba7fc2c5656e.png","title":"Friendly","arg":"friendly","subtitle":"Close friends' conversations"},{"imagefile":"a87c0d3dae17e6199388c9e2cabf9643ab4ad889.png","title":"Happy","arg":"happy"}]</string>
+          <string>[{"imagefile":"ce3625ffb747959536b381c35b4f405458eb0611.png","title":"Casual","arg":"casual ","subtitle":"Casual conversation"},{"imagefile":"efbf1f171ca10c900cc2e5d856cd4d2b97bb9547.png","title":"Professional","arg":"professional ","subtitle":"Professional conversation"},{"imagefile":"5e00feb1ae64e85e228be7a9566dba7fc2c5656e.png","title":"Friendly","arg":"friendly ","subtitle":"Close friends' conversations"},{"imagefile":"a87c0d3dae17e6199388c9e2cabf9643ab4ad889.png","title":"Happy","arg":"happy "}]</string>
           <key>keyword</key>
           <string>{var:ton_keyword}</string>
           <key>matchmode</key>
@@ -559,6 +559,7 @@ This workflow has been created using Fast Alfred, a user-friendly workflow build
 - Beautify: Enhance the text for better readability and engagement
 - Spell Check: Identify spelling errors without grammar checking
 - Translate: Translate text into any language
+- Tone: Easily change the tone of the text, with a few possible options
 
 ## Usage
 
