@@ -1,3 +1,16 @@
+# [1.2.0](https://github.com/Avivbens/alfred-text-transformer/compare/v1.1.0...v1.2.0) (2024-08-15)
+
+
+### Bug Fixes
+
+* improve prompts for current features ([e92dd7b](https://github.com/Avivbens/alfred-text-transformer/commit/e92dd7bf89a84c52f8de7a00d71b9b99266d6ea9))
+
+
+### Features
+
+* fully support 4 tones to adjust text 🥷 ([904b37d](https://github.com/Avivbens/alfred-text-transformer/commit/904b37df0c33ac10bb89a610dfd37a599cb4c1a1))
+* support `Action Items` extractor ([0ca1f4e](https://github.com/Avivbens/alfred-text-transformer/commit/0ca1f4ea7e095de17c5f3ee7422852dd495b549d))
+
 # [1.1.0](https://github.com/Avivbens/alfred-text-transformer/compare/v1.0.0...v1.1.0) (2024-07-05)
 
 
