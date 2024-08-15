@@ -30,7 +30,9 @@ ${homepage}
  * @type {import('fast-alfred').FastAlfredConfig}
  */
 module.exports = {
-    bundlerOptions: {},
+    bundlerOptions: {
+        rootAssets: ['List Filter Images'],
+    },
     workflowMetadata: {
         name: 'Text Transformer',
         createdby: author.name,

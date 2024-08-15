@@ -13,7 +13,7 @@ export async function callOpenAI(token: string, systemPrompt: string, userPrompt
             },
             {
                 role: 'user',
-                content: `--- USER PROMPT TO PROCESS:\n${userPrompt.trim()}\n---`,
+                content: userPrompt.trim(),
             },
         ],
         model: 'gpt-4o',
