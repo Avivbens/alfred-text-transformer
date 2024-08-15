@@ -11,6 +11,7 @@ This workflow has been created using Fast Alfred, a user-friendly workflow build
 - Beautify: Enhance the text for better readability and engagement
 - Spell Check: Identify spelling errors without grammar checking
 - Translate: Translate text into any language
+- Tone: Easily change the tone of the text, with a few possible options
 
 ## Usage
 
@@ -30,7 +31,9 @@ ${homepage}
  * @type {import('fast-alfred').FastAlfredConfig}
  */
 module.exports = {
-    bundlerOptions: {},
+    bundlerOptions: {
+        rootAssets: ['List Filter Images'],
+    },
     workflowMetadata: {
         name: 'Text Transformer',
         createdby: author.name,

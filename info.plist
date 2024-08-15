@@ -8,7 +8,53 @@
     <string>Productivity</string>
     <key>connections</key>
     <dict>
+      <key>63CC1099-CED7-4DE9-982B-41AEBBF7F81B</key>
+      <array>
+        <dict>
+          <key>destinationuid</key>
+          <string>BDA5261A-EF85-4EB4-9DAA-F57EB307B76F</string>
+          <key>modifiers</key>
+          <integer>1048576</integer>
+          <key>modifiersubtext</key>
+          <string></string>
+          <key>vitoclose</key>
+          <true></true>
+        </dict>
+        <dict>
+          <key>destinationuid</key>
+          <string>47B45BC6-EA28-4EFD-8A39-E2FC7283C0E7</string>
+          <key>modifiers</key>
+          <integer>0</integer>
+          <key>modifiersubtext</key>
+          <string></string>
+          <key>vitoclose</key>
+          <false></false>
+        </dict>
+      </array>
       <key>6F2D236E-D961-42DC-ACF2-7C025CA92966</key>
+      <array>
+        <dict>
+          <key>destinationuid</key>
+          <string>BDA5261A-EF85-4EB4-9DAA-F57EB307B76F</string>
+          <key>modifiers</key>
+          <integer>1048576</integer>
+          <key>modifiersubtext</key>
+          <string>Preview</string>
+          <key>vitoclose</key>
+          <true></true>
+        </dict>
+        <dict>
+          <key>destinationuid</key>
+          <string>47B45BC6-EA28-4EFD-8A39-E2FC7283C0E7</string>
+          <key>modifiers</key>
+          <integer>0</integer>
+          <key>modifiersubtext</key>
+          <string></string>
+          <key>vitoclose</key>
+          <false></false>
+        </dict>
+      </array>
+      <key>8F3894EF-9FDA-4943-9C83-1229F6B9B94C</key>
       <array>
         <dict>
           <key>destinationuid</key>
@@ -46,6 +92,19 @@
         <dict>
           <key>destinationuid</key>
           <string>47B45BC6-EA28-4EFD-8A39-E2FC7283C0E7</string>
+          <key>modifiers</key>
+          <integer>0</integer>
+          <key>modifiersubtext</key>
+          <string></string>
+          <key>vitoclose</key>
+          <false></false>
+        </dict>
+      </array>
+      <key>ABF9D230-83A8-4025-AD84-8DBEC4B16968</key>
+      <array>
+        <dict>
+          <key>destinationuid</key>
+          <string>63CC1099-CED7-4DE9-982B-41AEBBF7F81B</string>
           <key>modifiers</key>
           <integer>0</integer>
           <key>modifiersubtext</key>
@@ -256,6 +315,56 @@
           <key>escaping</key>
           <integer>102</integer>
           <key>keyword</key>
+          <string>{var:action_items_keyword}</string>
+          <key>queuedelaycustom</key>
+          <integer>3</integer>
+          <key>queuedelayimmediatelyinitially</key>
+          <true></true>
+          <key>queuedelaymode</key>
+          <integer>0</integer>
+          <key>queuemode</key>
+          <integer>2</integer>
+          <key>runningsubtext</key>
+          <string>Extracting...</string>
+          <key>script</key>
+          <string>./esbuild/assets/run-node.sh esbuild/action-items "$1"
+</string>
+          <key>scriptargtype</key>
+          <integer>1</integer>
+          <key>scriptfile</key>
+          <string></string>
+          <key>subtext</key>
+          <string>Extract action items from the provided text</string>
+          <key>title</key>
+          <string>Action Items</string>
+          <key>type</key>
+          <integer>11</integer>
+          <key>withspace</key>
+          <true></true>
+        </dict>
+        <key>type</key>
+        <string>alfred.workflow.input.scriptfilter</string>
+        <key>uid</key>
+        <string>8F3894EF-9FDA-4943-9C83-1229F6B9B94C</string>
+        <key>version</key>
+        <integer>3</integer>
+      </dict>
+      <dict>
+        <key>config</key>
+        <dict>
+          <key>alfredfiltersresults</key>
+          <false></false>
+          <key>alfredfiltersresultsmatchmode</key>
+          <integer>0</integer>
+          <key>argumenttreatemptyqueryasnil</key>
+          <true></true>
+          <key>argumenttrimmode</key>
+          <integer>0</integer>
+          <key>argumenttype</key>
+          <integer>0</integer>
+          <key>escaping</key>
+          <integer>102</integer>
+          <key>keyword</key>
           <string>{var:beautify_keyword}</string>
           <key>queuedelaycustom</key>
           <integer>3</integer>
@@ -287,6 +396,25 @@
         <string>alfred.workflow.input.scriptfilter</string>
         <key>uid</key>
         <string>B9150C05-6465-4A8C-91F7-D6929176F398</string>
+        <key>version</key>
+        <integer>3</integer>
+      </dict>
+      <dict>
+        <key>config</key>
+        <dict>
+          <key>autopaste</key>
+          <false></false>
+          <key>clipboardtext</key>
+          <string>{query}</string>
+          <key>ignoredynamicplaceholders</key>
+          <false></false>
+          <key>transient</key>
+          <false></false>
+        </dict>
+        <key>type</key>
+        <string>alfred.workflow.output.clipboard</string>
+        <key>uid</key>
+        <string>47B45BC6-EA28-4EFD-8A39-E2FC7283C0E7</string>
         <key>version</key>
         <integer>3</integer>
       </dict>
@@ -343,21 +471,81 @@
       <dict>
         <key>config</key>
         <dict>
-          <key>autopaste</key>
+          <key>alfredfiltersresults</key>
           <false></false>
-          <key>clipboardtext</key>
-          <string>{query}</string>
-          <key>ignoredynamicplaceholders</key>
-          <false></false>
-          <key>transient</key>
-          <false></false>
+          <key>alfredfiltersresultsmatchmode</key>
+          <integer>0</integer>
+          <key>argumenttreatemptyqueryasnil</key>
+          <true></true>
+          <key>argumenttrimmode</key>
+          <integer>0</integer>
+          <key>argumenttype</key>
+          <integer>0</integer>
+          <key>escaping</key>
+          <integer>102</integer>
+          <key>queuedelaycustom</key>
+          <integer>3</integer>
+          <key>queuedelayimmediatelyinitially</key>
+          <true></true>
+          <key>queuedelaymode</key>
+          <integer>0</integer>
+          <key>queuemode</key>
+          <integer>1</integer>
+          <key>runningsubtext</key>
+          <string>Tuning...</string>
+          <key>script</key>
+          <string>./esbuild/assets/run-node.sh esbuild/tones "$1"
+</string>
+          <key>scriptargtype</key>
+          <integer>1</integer>
+          <key>scriptfile</key>
+          <string></string>
+          <key>subtext</key>
+          <string></string>
+          <key>title</key>
+          <string>Adjusting text</string>
+          <key>type</key>
+          <integer>11</integer>
+          <key>withspace</key>
+          <true></true>
         </dict>
         <key>type</key>
-        <string>alfred.workflow.output.clipboard</string>
+        <string>alfred.workflow.input.scriptfilter</string>
         <key>uid</key>
-        <string>47B45BC6-EA28-4EFD-8A39-E2FC7283C0E7</string>
+        <string>63CC1099-CED7-4DE9-982B-41AEBBF7F81B</string>
         <key>version</key>
         <integer>3</integer>
+      </dict>
+      <dict>
+        <key>config</key>
+        <dict>
+          <key>argumenttrimmode</key>
+          <integer>0</integer>
+          <key>argumenttype</key>
+          <integer>1</integer>
+          <key>fixedorder</key>
+          <false></false>
+          <key>items</key>
+          <string>[{"imagefile":"ce3625ffb747959536b381c35b4f405458eb0611.png","title":"Casual","arg":"casual ","subtitle":"Casual conversation"},{"imagefile":"efbf1f171ca10c900cc2e5d856cd4d2b97bb9547.png","title":"Professional","arg":"professional ","subtitle":"Professional conversation"},{"imagefile":"5e00feb1ae64e85e228be7a9566dba7fc2c5656e.png","title":"Friendly","arg":"friendly ","subtitle":"Close friends' conversations"},{"imagefile":"a87c0d3dae17e6199388c9e2cabf9643ab4ad889.png","title":"Happy","arg":"happy "}]</string>
+          <key>keyword</key>
+          <string>{var:ton_keyword}</string>
+          <key>matchmode</key>
+          <integer>0</integer>
+          <key>runningsubtext</key>
+          <string></string>
+          <key>subtext</key>
+          <string>Change the ton of a text</string>
+          <key>title</key>
+          <string>Change Ton</string>
+          <key>withspace</key>
+          <true></true>
+        </dict>
+        <key>type</key>
+        <string>alfred.workflow.input.listfilter</string>
+        <key>uid</key>
+        <string>ABF9D230-83A8-4025-AD84-8DBEC4B16968</string>
+        <key>version</key>
+        <integer>1</integer>
       </dict>
     </array>
     <key>readme</key>
@@ -371,6 +559,7 @@ This workflow has been created using Fast Alfred, a user-friendly workflow build
 - Beautify: Enhance the text for better readability and engagement
 - Spell Check: Identify spelling errors without grammar checking
 - Translate: Translate text into any language
+- Tone: Easily change the tone of the text, with a few possible options
 
 ## Usage
 
@@ -389,9 +578,16 @@ https://github.com/Avivbens/alfred-text-transformer</string>
       <key>47B45BC6-EA28-4EFD-8A39-E2FC7283C0E7</key>
       <dict>
         <key>xpos</key>
-        <integer>730</integer>
+        <integer>735</integer>
         <key>ypos</key>
-        <integer>515</integer>
+        <integer>670</integer>
+      </dict>
+      <key>63CC1099-CED7-4DE9-982B-41AEBBF7F81B</key>
+      <dict>
+        <key>xpos</key>
+        <integer>365</integer>
+        <key>ypos</key>
+        <integer>950</integer>
       </dict>
       <key>6F2D236E-D961-42DC-ACF2-7C025CA92966</key>
       <dict>
@@ -400,6 +596,13 @@ https://github.com/Avivbens/alfred-text-transformer</string>
         <key>ypos</key>
         <integer>215</integer>
       </dict>
+      <key>8F3894EF-9FDA-4943-9C83-1229F6B9B94C</key>
+      <dict>
+        <key>xpos</key>
+        <integer>70</integer>
+        <key>ypos</key>
+        <integer>365</integer>
+      </dict>
       <key>9A15D0E2-7D63-41A4-BC56-51F20740BA9B</key>
       <dict>
         <key>xpos</key>
@@ -407,12 +610,19 @@ https://github.com/Avivbens/alfred-text-transformer</string>
         <key>ypos</key>
         <integer>65</integer>
       </dict>
+      <key>ABF9D230-83A8-4025-AD84-8DBEC4B16968</key>
+      <dict>
+        <key>xpos</key>
+        <integer>75</integer>
+        <key>ypos</key>
+        <integer>950</integer>
+      </dict>
       <key>B9150C05-6465-4A8C-91F7-D6929176F398</key>
       <dict>
         <key>xpos</key>
-        <integer>70</integer>
+        <integer>75</integer>
         <key>ypos</key>
-        <integer>365</integer>
+        <integer>520</integer>
       </dict>
       <key>BDA5261A-EF85-4EB4-9DAA-F57EB307B76F</key>
       <dict>
@@ -424,9 +634,9 @@ https://github.com/Avivbens/alfred-text-transformer</string>
       <key>E99E241E-04E1-4AAC-A6C9-078930728071</key>
       <dict>
         <key>xpos</key>
-        <integer>70</integer>
+        <integer>75</integer>
         <key>ypos</key>
-        <integer>515</integer>
+        <integer>670</integer>
       </dict>
     </dict>
     <key>userconfigurationconfig</key>
@@ -560,6 +770,48 @@ https://github.com/Avivbens/alfred-text-transformer</string>
         <string>textfield</string>
         <key>variable</key>
         <string>beautify_keyword</string>
+      </dict>
+      <dict>
+        <key>config</key>
+        <dict>
+          <key>default</key>
+          <string>ton</string>
+          <key>placeholder</key>
+          <string></string>
+          <key>required</key>
+          <true></true>
+          <key>trim</key>
+          <true></true>
+        </dict>
+        <key>description</key>
+        <string></string>
+        <key>label</key>
+        <string>Ton Keyword</string>
+        <key>type</key>
+        <string>textfield</string>
+        <key>variable</key>
+        <string>ton_keyword</string>
+      </dict>
+      <dict>
+        <key>config</key>
+        <dict>
+          <key>default</key>
+          <string>aci</string>
+          <key>placeholder</key>
+          <string></string>
+          <key>required</key>
+          <true></true>
+          <key>trim</key>
+          <true></true>
+        </dict>
+        <key>description</key>
+        <string>Extract relevant pinpoint items from a large text</string>
+        <key>label</key>
+        <string>Action Items Keyword</string>
+        <key>type</key>
+        <string>textfield</string>
+        <key>variable</key>
+        <string>action_items_keyword</string>
       </dict>
     </array>
     <key>version</key>
