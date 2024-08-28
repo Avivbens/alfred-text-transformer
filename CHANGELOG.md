@@ -1,3 +1,11 @@
+# [1.3.0](https://github.com/Avivbens/alfred-text-transformer/compare/v1.2.0...v1.3.0) (2024-08-28)
+
+
+### Features
+
+* add `explain` flow for getting some explanation ([5724b10](https://github.com/Avivbens/alfred-text-transformer/commit/5724b10bf28919904d1d6bd6e04ce1d2e72b6645))
+* add `summarize` flow for getting text summarization ([d96fff7](https://github.com/Avivbens/alfred-text-transformer/commit/d96fff7eb12606967b1715cedf5e73dc2b66d309))
+
 # [1.2.0](https://github.com/Avivbens/alfred-text-transformer/compare/v1.1.0...v1.2.0) (2024-08-15)
 
 
