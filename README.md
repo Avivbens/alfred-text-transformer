@@ -22,6 +22,9 @@ Translate, spell-check, and transform text in Alfred, using AI and other tools.
 -   Beautify: Enhance the text for better readability and engagement
 -   Spell Check: Identify spelling errors without grammar checking
 -   Translate: Translate text into any language
+-   Tones: Change the tone of the text be giving input
+-   Summarize: Summarize the text to be more concise
+-   Explain: Explain the text in a more understandable way
 
 ### Install via GitHub Releases :sparkles:
 
