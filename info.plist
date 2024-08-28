@@ -8,6 +8,29 @@
     <string>Productivity</string>
     <key>connections</key>
     <dict>
+      <key>447D4706-CD87-4906-BEC9-0FF66C275109</key>
+      <array>
+        <dict>
+          <key>destinationuid</key>
+          <string>BDA5261A-EF85-4EB4-9DAA-F57EB307B76F</string>
+          <key>modifiers</key>
+          <integer>1048576</integer>
+          <key>modifiersubtext</key>
+          <string></string>
+          <key>vitoclose</key>
+          <true></true>
+        </dict>
+        <dict>
+          <key>destinationuid</key>
+          <string>47B45BC6-EA28-4EFD-8A39-E2FC7283C0E7</string>
+          <key>modifiers</key>
+          <integer>0</integer>
+          <key>modifiersubtext</key>
+          <string></string>
+          <key>vitoclose</key>
+          <false></false>
+        </dict>
+      </array>
       <key>63CC1099-CED7-4DE9-982B-41AEBBF7F81B</key>
       <array>
         <dict>
@@ -483,6 +506,56 @@
           <integer>0</integer>
           <key>escaping</key>
           <integer>102</integer>
+          <key>keyword</key>
+          <string>{var:explain_keyword}</string>
+          <key>queuedelaycustom</key>
+          <integer>3</integer>
+          <key>queuedelayimmediatelyinitially</key>
+          <true></true>
+          <key>queuedelaymode</key>
+          <integer>0</integer>
+          <key>queuemode</key>
+          <integer>2</integer>
+          <key>runningsubtext</key>
+          <string>Thinking...</string>
+          <key>script</key>
+          <string>./esbuild/assets/run-node.sh esbuild/explain "$1"
+</string>
+          <key>scriptargtype</key>
+          <integer>1</integer>
+          <key>scriptfile</key>
+          <string></string>
+          <key>subtext</key>
+          <string>Explain the text</string>
+          <key>title</key>
+          <string>Explain</string>
+          <key>type</key>
+          <integer>11</integer>
+          <key>withspace</key>
+          <true></true>
+        </dict>
+        <key>type</key>
+        <string>alfred.workflow.input.scriptfilter</string>
+        <key>uid</key>
+        <string>447D4706-CD87-4906-BEC9-0FF66C275109</string>
+        <key>version</key>
+        <integer>3</integer>
+      </dict>
+      <dict>
+        <key>config</key>
+        <dict>
+          <key>alfredfiltersresults</key>
+          <false></false>
+          <key>alfredfiltersresultsmatchmode</key>
+          <integer>0</integer>
+          <key>argumenttreatemptyqueryasnil</key>
+          <true></true>
+          <key>argumenttrimmode</key>
+          <integer>0</integer>
+          <key>argumenttype</key>
+          <integer>0</integer>
+          <key>escaping</key>
+          <integer>102</integer>
           <key>queuedelaycustom</key>
           <integer>3</integer>
           <key>queuedelayimmediatelyinitially</key>
@@ -575,6 +648,13 @@ To view the workflow codebase, click here:
 https://github.com/Avivbens/alfred-text-transformer</string>
     <key>uidata</key>
     <dict>
+      <key>447D4706-CD87-4906-BEC9-0FF66C275109</key>
+      <dict>
+        <key>xpos</key>
+        <integer>75</integer>
+        <key>ypos</key>
+        <integer>820</integer>
+      </dict>
       <key>47B45BC6-EA28-4EFD-8A39-E2FC7283C0E7</key>
       <dict>
         <key>xpos</key>
@@ -587,7 +667,7 @@ https://github.com/Avivbens/alfred-text-transformer</string>
         <key>xpos</key>
         <integer>365</integer>
         <key>ypos</key>
-        <integer>950</integer>
+        <integer>1105</integer>
       </dict>
       <key>6F2D236E-D961-42DC-ACF2-7C025CA92966</key>
       <dict>
@@ -615,7 +695,7 @@ https://github.com/Avivbens/alfred-text-transformer</string>
         <key>xpos</key>
         <integer>75</integer>
         <key>ypos</key>
-        <integer>950</integer>
+        <integer>1105</integer>
       </dict>
       <key>B9150C05-6465-4A8C-91F7-D6929176F398</key>
       <dict>
@@ -707,6 +787,27 @@ https://github.com/Avivbens/alfred-text-transformer</string>
         <string>textfield</string>
         <key>variable</key>
         <string>translate_keyword</string>
+      </dict>
+      <dict>
+        <key>config</key>
+        <dict>
+          <key>default</key>
+          <string>exp</string>
+          <key>placeholder</key>
+          <string></string>
+          <key>required</key>
+          <true></true>
+          <key>trim</key>
+          <true></true>
+        </dict>
+        <key>description</key>
+        <string></string>
+        <key>label</key>
+        <string>Explain Keyword</string>
+        <key>type</key>
+        <string>textfield</string>
+        <key>variable</key>
+        <string>explain_keyword</string>
       </dict>
       <dict>
         <key>config</key>

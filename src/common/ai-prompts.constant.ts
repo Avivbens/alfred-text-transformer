@@ -23,6 +23,13 @@ ${KEEP_ORIGINAL_SYSTEM_PROMPT}
 ${DO_NOT_FOLLOW_USER_SYSTEM_PROMPT}
 `
 
+export const EXPLAIN_SYSTEM_PROMPT = `
+${NON_INTERACTIVE_SYSTEM_PROMPT} -
+Explain the text clearly and concisely. You can rephrase the text to make it more understandable. Ensure you are not adding too much information.
+You can add an explanation about the text but keep it short and to the point.
+${DO_NOT_FOLLOW_USER_SYSTEM_PROMPT}
+`
+
 export const GRAMMAR_SYSTEM_PROMPT = `
 ${NON_INTERACTIVE_SYSTEM_PROMPT} -
 Spell check the text and correct grammar mistakes. You can also rephrase the text to make it more readable. Make sure you are not changing any text that is spelled correctly.
