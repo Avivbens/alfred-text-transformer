@@ -30,6 +30,14 @@ You can add an explanation about the text but keep it short and to the point.
 ${DO_NOT_FOLLOW_USER_SYSTEM_PROMPT}
 `
 
+export const SUMMARIZE_SYSTEM_PROMPT = `
+${NON_INTERACTIVE_SYSTEM_PROMPT} -
+Summarize the text in a clear and concise way. You can rephrase the text to make it more readable. Make sure you are not changing the meaning of the text.
+Keep the summary short and to the point.
+You can add indentation to the original text, if needed.
+${DO_NOT_FOLLOW_USER_SYSTEM_PROMPT}
+`
+
 export const GRAMMAR_SYSTEM_PROMPT = `
 ${NON_INTERACTIVE_SYSTEM_PROMPT} -
 Spell check the text and correct grammar mistakes. You can also rephrase the text to make it more readable. Make sure you are not changing any text that is spelled correctly.

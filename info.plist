@@ -182,6 +182,29 @@
           <false></false>
         </dict>
       </array>
+      <key>EE606C47-F1A2-4EB0-9F0C-90C92E31684C</key>
+      <array>
+        <dict>
+          <key>destinationuid</key>
+          <string>BDA5261A-EF85-4EB4-9DAA-F57EB307B76F</string>
+          <key>modifiers</key>
+          <integer>1048576</integer>
+          <key>modifiersubtext</key>
+          <string></string>
+          <key>vitoclose</key>
+          <true></true>
+        </dict>
+        <dict>
+          <key>destinationuid</key>
+          <string>47B45BC6-EA28-4EFD-8A39-E2FC7283C0E7</string>
+          <key>modifiers</key>
+          <integer>0</integer>
+          <key>modifiersubtext</key>
+          <string></string>
+          <key>vitoclose</key>
+          <false></false>
+        </dict>
+      </array>
     </dict>
     <key>createdby</key>
     <string>Aviv Ben Shahar</string>
@@ -556,6 +579,56 @@
           <integer>0</integer>
           <key>escaping</key>
           <integer>102</integer>
+          <key>keyword</key>
+          <string>{var:summarize_keyword}</string>
+          <key>queuedelaycustom</key>
+          <integer>3</integer>
+          <key>queuedelayimmediatelyinitially</key>
+          <true></true>
+          <key>queuedelaymode</key>
+          <integer>0</integer>
+          <key>queuemode</key>
+          <integer>2</integer>
+          <key>runningsubtext</key>
+          <string>Summarizing...</string>
+          <key>script</key>
+          <string>./esbuild/assets/run-node.sh esbuild/summarize "$1"
+</string>
+          <key>scriptargtype</key>
+          <integer>1</integer>
+          <key>scriptfile</key>
+          <string></string>
+          <key>subtext</key>
+          <string>Summarize the text</string>
+          <key>title</key>
+          <string>Summarize</string>
+          <key>type</key>
+          <integer>11</integer>
+          <key>withspace</key>
+          <true></true>
+        </dict>
+        <key>type</key>
+        <string>alfred.workflow.input.scriptfilter</string>
+        <key>uid</key>
+        <string>EE606C47-F1A2-4EB0-9F0C-90C92E31684C</string>
+        <key>version</key>
+        <integer>3</integer>
+      </dict>
+      <dict>
+        <key>config</key>
+        <dict>
+          <key>alfredfiltersresults</key>
+          <false></false>
+          <key>alfredfiltersresultsmatchmode</key>
+          <integer>0</integer>
+          <key>argumenttreatemptyqueryasnil</key>
+          <true></true>
+          <key>argumenttrimmode</key>
+          <integer>0</integer>
+          <key>argumenttype</key>
+          <integer>0</integer>
+          <key>escaping</key>
+          <integer>102</integer>
           <key>queuedelaycustom</key>
           <integer>3</integer>
           <key>queuedelayimmediatelyinitially</key>
@@ -667,7 +740,7 @@ https://github.com/Avivbens/alfred-text-transformer</string>
         <key>xpos</key>
         <integer>365</integer>
         <key>ypos</key>
-        <integer>1105</integer>
+        <integer>1255</integer>
       </dict>
       <key>6F2D236E-D961-42DC-ACF2-7C025CA92966</key>
       <dict>
@@ -695,7 +768,7 @@ https://github.com/Avivbens/alfred-text-transformer</string>
         <key>xpos</key>
         <integer>75</integer>
         <key>ypos</key>
-        <integer>1105</integer>
+        <integer>1255</integer>
       </dict>
       <key>B9150C05-6465-4A8C-91F7-D6929176F398</key>
       <dict>
@@ -717,6 +790,13 @@ https://github.com/Avivbens/alfred-text-transformer</string>
         <integer>75</integer>
         <key>ypos</key>
         <integer>670</integer>
+      </dict>
+      <key>EE606C47-F1A2-4EB0-9F0C-90C92E31684C</key>
+      <dict>
+        <key>xpos</key>
+        <integer>75</integer>
+        <key>ypos</key>
+        <integer>970</integer>
       </dict>
     </dict>
     <key>userconfigurationconfig</key>
@@ -829,6 +909,27 @@ https://github.com/Avivbens/alfred-text-transformer</string>
         <string>textfield</string>
         <key>variable</key>
         <string>grammar_keyword</string>
+      </dict>
+      <dict>
+        <key>config</key>
+        <dict>
+          <key>default</key>
+          <string>sum</string>
+          <key>placeholder</key>
+          <string></string>
+          <key>required</key>
+          <true></true>
+          <key>trim</key>
+          <true></true>
+        </dict>
+        <key>description</key>
+        <string></string>
+        <key>label</key>
+        <string>Summarize Keyword</string>
+        <key>type</key>
+        <string>textfield</string>
+        <key>variable</key>
+        <string>summarize_keyword</string>
       </dict>
       <dict>
         <key>config</key>
