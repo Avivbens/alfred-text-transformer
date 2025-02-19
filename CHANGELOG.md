@@ -1,3 +1,10 @@
+## [1.3.1](https://github.com/Avivbens/alfred-text-transformer/compare/v1.3.0...v1.3.1) (2025-02-19)
+
+
+### Bug Fixes
+
+* add API key link to readme ([865479b](https://github.com/Avivbens/alfred-text-transformer/commit/865479b473e3ccb3b175d602fe1e367db8871c54))
+
 # [1.3.0](https://github.com/Avivbens/alfred-text-transformer/compare/v1.2.0...v1.3.0) (2024-08-28)
 
 
