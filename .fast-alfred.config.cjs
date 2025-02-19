@@ -19,6 +19,12 @@ This workflow has been created using Fast Alfred, a user-friendly workflow build
 
 Use your customized Alfred keyword to activate each command.
 
+### API key
+
+You can generate an OpenAI key via the following link:
+
+https://platform.openai.com/settings/organization/api-keys
+
 ### Translate
 
 Enter the language code (e.g., "en" for English) followed by the text to be translated, like "en Hello, how are you?"
