@@ -1,8 +1,8 @@
 import type { AlfredListItem } from 'fast-alfred'
 import { FastAlfred } from 'fast-alfred'
 import { setTimeout } from 'node:timers/promises'
-import { SUMMARIZE_SYSTEM_PROMPT } from '@common/ai-prompts.constant'
 import { DEFAULT_DEBOUNCE_TIME } from '@common/defaults.constants'
+import { SUMMARIZE_SYSTEM_PROMPT } from '@common/prompts'
 import { Variables } from '@common/variables.enum'
 import type { AvailableModels } from '@models/available-models.enum'
 import { callModel } from '@services/llm.service'
@@ -31,7 +31,8 @@ import { callModel } from '@services/llm.service'
             throw new Error('Input is required')
         }
 
-        const res = await callModel(token, model, { system: SUMMARIZE_SYSTEM_PROMPT, user: alfredClient.input })
+        const system = await SUMMARIZE_SYSTEM_PROMPT.format({})
+        const res = await callModel(token, model, { system, user: alfredClient.input })
 
         const items: AlfredListItem[] = [
             {

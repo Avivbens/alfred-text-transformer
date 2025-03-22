@@ -1,8 +1,8 @@
 import type { AlfredListItem } from 'fast-alfred'
 import { FastAlfred } from 'fast-alfred'
 import { setTimeout } from 'node:timers/promises'
-import { TONE_SYSTEM_PROMPT } from '@common/ai-prompts.constant'
 import { DEFAULT_DEBOUNCE_TIME } from '@common/defaults.constants'
+import { TONE_SYSTEM_PROMPT } from '@common/prompts'
 import { Variables } from '@common/variables.enum'
 import type { AvailableModels } from '@models/available-models.enum'
 import { AvailableTone } from '@models/tones.enum'
@@ -43,7 +43,7 @@ import { callModel } from '@services/llm.service'
          */
         await setTimeout(denounceTime)
 
-        const system = TONE_SYSTEM_PROMPT(tone as AvailableTone)
+        const system = await TONE_SYSTEM_PROMPT(tone as AvailableTone).format({})
         const res = await callModel(token, model, { system, user: query })
 
         const items: AlfredListItem[] = [
