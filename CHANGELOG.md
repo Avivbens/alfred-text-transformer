@@ -1,3 +1,16 @@
+# [2.0.0](https://github.com/Avivbens/alfred-text-transformer/compare/v1.3.1...v2.0.0) (2025-03-22)
+
+
+### Features
+
+* support model deletion, remove `openai` dependency - use `langchain` ([8011c71](https://github.com/Avivbens/alfred-text-transformer/commit/8011c71ff39d6e068c0132d06adce90ba50bc5a1))
+* use `langchain` `PromptTemplate` instead of plain strings, better split prompts ([7973c33](https://github.com/Avivbens/alfred-text-transformer/commit/7973c33bd9f58c6bc2717120ab56c8a61d71aed1))
+
+
+### BREAKING CHANGES
+
+* `llm_token` input instead of `open_ai_token`, `selected_model` is mandatory to select
+
 ## [1.3.1](https://github.com/Avivbens/alfred-text-transformer/compare/v1.3.0...v1.3.1) (2025-02-19)
 
 
