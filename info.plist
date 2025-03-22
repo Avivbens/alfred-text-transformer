@@ -822,19 +822,85 @@ https://github.com/Avivbens/alfred-text-transformer</string>
           <integer>3</integer>
         </dict>
         <key>description</key>
-        <string>Your OpenAI access token</string>
+        <string>Your LLM provider access token</string>
         <key>label</key>
-        <string>OpenAI Token</string>
+        <string>LLM Token</string>
         <key>type</key>
         <string>textarea</string>
         <key>variable</key>
-        <string>open_ai_token</string>
+        <string>llm_token</string>
+      </dict>
+      <dict>
+        <key>config</key>
+        <dict>
+          <key>default</key>
+          <string>gpt-4o-mini</string>
+          <key>pairs</key>
+          <array>
+            <array>
+              <string>GPT 4o</string>
+              <string>gpt-4o</string>
+            </array>
+            <array>
+              <string>GPT 4o mini</string>
+              <string>gpt-4o-mini</string>
+            </array>
+            <array>
+              <string>GPT o3 mini high</string>
+              <string>o3-mini-high</string>
+            </array>
+            <array>
+              <string>GPT o3 mini</string>
+              <string>o3-mini</string>
+            </array>
+            <array>
+              <string>GPT o1 mini</string>
+              <string>o1-mini</string>
+            </array>
+            <array>
+              <string>GPT o1</string>
+              <string>o1</string>
+            </array>
+            <array>
+              <string>Google gemini 1.5</string>
+              <string>gemini-1.5-flash</string>
+            </array>
+            <array>
+              <string>Google gemini 2.0</string>
+              <string>gemini-2.0-flash</string>
+            </array>
+            <array>
+              <string>Google gemini 2.0 lite</string>
+              <string>gemini-2.0-flash-lite</string>
+            </array>
+            <array>
+              <string>Anthropic claude 3.7 sonnet</string>
+              <string>claude-3.7-sonnet</string>
+            </array>
+            <array>
+              <string>Anthropic claude 3.5 sonnet</string>
+              <string>claude-3.5-sonnet</string>
+            </array>
+            <array>
+              <string>Anthropic claude 3.5 haiku</string>
+              <string>claude-3.5-haiku</string>
+            </array>
+          </array>
+        </dict>
+        <key>description</key>
+        <string>Your selection for LLM provider - including Anthropic, Google, OpenAI</string>
+        <key>label</key>
+        <string>LLM Model to Use</string>
+        <key>type</key>
+        <string>popupbutton</string>
+        <key>variable</key>
+        <string>selected_model</string>
       </dict>
       <dict>
         <key>config</key>
         <dict>
           <key>defaultvalue</key>
-          <integer>700</integer>
+          <integer>300</integer>
           <key>markercount</key>
           <integer>16</integer>
           <key>maxvalue</key>
@@ -847,7 +913,7 @@ https://github.com/Avivbens/alfred-text-transformer</string>
           <true></true>
         </dict>
         <key>description</key>
-        <string>In order to avoid un-needed calls to Open AI, we would debounce each requrest until the user stopped typing ✨</string>
+        <string>In order to avoid unnecessary calls to the LLM model, we would debounce each request until the user stopped typing ✨</string>
         <key>label</key>
         <string>Debounce time to wait</string>
         <key>type</key>
