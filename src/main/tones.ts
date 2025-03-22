@@ -1,19 +1,26 @@
+import type { AlfredListItem } from 'fast-alfred'
 import { FastAlfred } from 'fast-alfred'
 import { setTimeout } from 'node:timers/promises'
-import { TONE_SYSTEM_PROMPT } from '@common/ai-prompts.constant'
-import { Variables } from '@common/variables'
+import { DEFAULT_DEBOUNCE_TIME } from '@common/defaults.constants'
+import { TONE_SYSTEM_PROMPT } from '@common/prompts'
+import { Variables } from '@common/variables.enum'
+import type { AvailableModels } from '@models/available-models.enum'
 import { AvailableTone } from '@models/tones.enum'
-import { callOpenAI } from '@services/openai.service'
+import { callModel } from '@services/llm.service'
 
 ;(async () => {
     const alfredClient = new FastAlfred()
 
     try {
-        const denounceTime = alfredClient.env.getEnv(Variables.DEBOUNCE_TIME, { defaultValue: 700, parser: Number })
-        const token: string | undefined = alfredClient.env.getEnv(Variables.OPEN_AI_TOKEN)
+        const denounceTime = alfredClient.env.getEnv(Variables.DEBOUNCE_TIME, {
+            defaultValue: DEFAULT_DEBOUNCE_TIME,
+            parser: Number,
+        })
+        const token: string | undefined = alfredClient.env.getEnv(Variables.LLM_TOKEN)
+        const model: AvailableModels | undefined = alfredClient.env.getEnv(Variables.SELECTED_MODEL)
 
-        if (!token) {
-            throw new Error('OpenAI token is not defined')
+        if (!token || !model) {
+            throw new Error('Token or model is not defined!')
         }
 
         if (!alfredClient.input) {
@@ -36,14 +43,16 @@ import { callOpenAI } from '@services/openai.service'
          */
         await setTimeout(denounceTime)
 
-        const systemPrompt = TONE_SYSTEM_PROMPT(tone as AvailableTone)
-        const res = await callOpenAI(token, systemPrompt, query)
+        const system = await TONE_SYSTEM_PROMPT(tone as AvailableTone).format({})
+        const res = await callModel(token, model, { system, user: query })
 
-        const items = res.map((option) => ({
-            title: option,
-            subtitle: 'Tones',
-            arg: option,
-        }))
+        const items: AlfredListItem[] = [
+            {
+                title: res,
+                subtitle: 'Tones',
+                arg: res,
+            },
+        ]
 
         alfredClient.output({ items })
     } catch (error) {
