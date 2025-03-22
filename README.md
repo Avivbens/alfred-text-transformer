@@ -47,3 +47,7 @@ You can hold down the `cmd` key to preview the output before copying it.
 Enter the language code (e.g., "en" for English) followed by the text to be translated, like "en Hello, how are you?"
 
 If the language code is missing, the default language will be English.
+
+## Configuration
+
+![Configuration](https://raw.githubusercontent.com/avivbens/alfred-text-transformer/HEAD/demo/settings.png)
